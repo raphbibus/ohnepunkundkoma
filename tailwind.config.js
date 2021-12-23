@@ -1,11 +1,17 @@
 module.exports = {
-    purge: [
+    content: [
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
     ],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
+        fontFamily: {
+            'display': ['"Wallpoet"', 'ui-monospace', 'SFMono-Regular',],
+            'sans': ['ui-sans-serif', 'system-ui', ],
+            'serif': ['ui-serif', 'Georgia', ],
+            'mono': ['ui-monospace', 'SFMono-Regular', ],
+        },
         extend: {
             typography: {
                 DEFAULT: {
@@ -48,7 +54,12 @@ module.exports = {
                 '10xl': '10rem',
             },
             colors: {
-
+                punk: {
+                    pink: '#E7227E',
+                    violet: '#BD18F5',
+                    dark: '#252525',
+                    light: '#EFEFEF',
+                }
             },
             minHeight: {
                 '0': '0',
@@ -83,5 +94,7 @@ module.exports = {
     plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
+        require('@tailwindcss/aspect-ratio'),
+        require('@tailwindcss/line-clamp'),
     ],
 }
