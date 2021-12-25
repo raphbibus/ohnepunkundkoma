@@ -8,9 +8,9 @@ module.exports = {
     theme: {
         fontFamily: {
             'display': ['"Wallpoet"', 'ui-monospace', 'SFMono-Regular',],
-            'sans': ['ui-sans-serif', 'system-ui', ],
+            'sans': ['"Coda"', 'ui-sans-serif', 'system-ui', ],
             'serif': ['ui-serif', 'Georgia', ],
-            'mono': ['ui-monospace', 'SFMono-Regular', ],
+            'mono': ['"Press Start 2P"', 'SFMono-Regular', ],
         },
         extend: {
             typography: {
